@@ -12,7 +12,7 @@ passport.use(
         {
             clientID: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_SECRET_KEY,
-            callbackURL: "/auth/google/callback",
+            callbackURL: "https://learnflow-84fp.onrender.com/auth/google/callback",
         },
         async (accessToken, refreshToken, profile, done) => {
             const newUser = {
